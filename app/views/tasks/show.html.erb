@@ -1,0 +1,6 @@
+<h2>My <%= @task.name %> tasks</h2>
+<p class='rectangle'><%= @task.details %></p>
+<% x = @task.completed ? 'Yes' : 'No' %>
+<p>Completed : <%= x %> </p>
+<br/>
+<%= link_to 'Back to list', tasks_path, class: 'link' %>
