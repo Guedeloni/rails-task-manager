@@ -3,4 +3,5 @@
 <% x = @task.completed ? 'Yes' : 'No' %>
 <p>Completed : <%= x %> </p>
 <br/>
-<%= link_to 'Back to list', tasks_path, class: 'link' %>
+<p><%= link_to 'Back to list', tasks_path, class: 'link' %>
+ - <%= link_to 'Edit this task', task_edit_path, class: 'link' %></p>
