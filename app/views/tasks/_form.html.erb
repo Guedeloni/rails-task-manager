@@ -1,0 +1,20 @@
+<%= form_for(@task) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br/>
+  <br/>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <br/>
+  <br/>
+  <% unless task.new_record?() %>
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+    <br/>
+    <br/>
+  <% end %>
+  <%= f.submit %>
+<% end %>
+
+<!-- <i class="far fa-square"></i>
+<i class="far fa-check-square"></i> -->
